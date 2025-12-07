@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Sidebar from "./components/sibeBar";
 import Hero from "./pages/Hero";
+import About from "./pages/About";
 import ThreeBackground from "./components/ThreeBackground";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         {/* ROUTES */}
         <Routes>
           <Route path="/" element={<Hero />} />
+          <Route path="/about" element={<About/>}/>
         </Routes>
       </div>
     </Router>

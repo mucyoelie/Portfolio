@@ -1,5 +1,6 @@
-import React from "react";
+import React from "react"; 
 import { ArrowRight } from "lucide-react";
+
 
 interface HeroSectionProps {
   name?: string;
@@ -69,10 +70,8 @@ const Hero: React.FC<HeroSectionProps> = ({
           />
         </div>
       </div>
-     
     </section>
   );
 };
-
 export default Hero;
 
