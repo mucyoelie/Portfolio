@@ -8,37 +8,37 @@ export default function ThreeBackground() {
     const mount = mountRef.current;
     if (!mount) return;
 
-    // === Scene Setup ===
+    // Scene
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(
       75,
-      mount.clientWidth / mount.clientHeight,
+      window.innerWidth / window.innerHeight,
       0.1,
       1000
     );
     camera.position.z = 2;
 
     const renderer = new THREE.WebGLRenderer({ alpha: true });
-    renderer.setSize(mount.clientWidth, mount.clientHeight);
+    renderer.setSize(window.innerWidth, window.innerHeight);
     mount.appendChild(renderer.domElement);
 
-    // === STAR FIELD ===
+    // Stars
     const starCount = 1500;
     const positions = new Float32Array(starCount * 3);
-    const velocities = new Float32Array(starCount); // for z-axis speed
+    const velocities = new Float32Array(starCount);
 
     for (let i = 0; i < starCount; i++) {
-      positions[i * 3] = (Math.random() - 0.5) * 10; // x
-      positions[i * 3 + 1] = (Math.random() - 0.5) * 10; // y
-      positions[i * 3 + 2] = -Math.random() * 5; // z
-      velocities[i] = 0.002 + Math.random() * 0.003; // speed along z
+      positions[i * 3] = (Math.random() - 0.5) * 10;
+      positions[i * 3 + 1] = (Math.random() - 0.5) * 10;
+      positions[i * 3 + 2] = -Math.random() * 5;
+      velocities[i] = 0.002 + Math.random() * 0.003;
     }
 
     const starGeometry = new THREE.BufferGeometry();
     starGeometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
 
     const starMaterial = new THREE.PointsMaterial({
-      color: "rgba(0, 98, 66, 1)",
+      color: "#006242",
       size: 0.02,
       opacity: 0.6,
       transparent: true,
@@ -47,17 +47,16 @@ export default function ThreeBackground() {
     const stars = new THREE.Points(starGeometry, starMaterial);
     scene.add(stars);
 
-    // === Animation ===
     const animate = () => {
-      const positionsArray = starGeometry.attributes.position.array as Float32Array;
+      const pos = starGeometry.attributes.position.array as Float32Array;
 
       for (let i = 0; i < starCount; i++) {
-        positionsArray[i * 3 + 2] += velocities[i]; // move along z
+        pos[i * 3 + 2] += velocities[i];
 
-        if (positionsArray[i * 3 + 2] > 1) {
-          positionsArray[i * 3 + 2] = -5; // reset star back
-          positionsArray[i * 3] = (Math.random() - 0.5) * 10;
-          positionsArray[i * 3 + 1] = (Math.random() - 0.5) * 10;
+        if (pos[i * 3 + 2] > 1) {
+          pos[i * 3 + 2] = -5;
+          pos[i * 3] = (Math.random() - 0.5) * 10;
+          pos[i * 3 + 1] = (Math.random() - 0.5) * 10;
         }
       }
 
@@ -72,7 +71,6 @@ export default function ThreeBackground() {
 
     animate();
 
-    // === Cleanup ===
     return () => {
       mount.removeChild(renderer.domElement);
     };
@@ -81,7 +79,8 @@ export default function ThreeBackground() {
   return (
     <div
       ref={mountRef}
-      className="absolute inset-0 opacity-60 pointer-events-none"
+      className="absolute top-0 left-0 w-screen h-screen pointer-events-none -z-10"
     />
   );
 }
+
