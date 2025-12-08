@@ -86,7 +86,7 @@ const Sidebar: React.FC<SidebarProps> = ({ onToggle3D }) => {
                 `flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-200 group
                 ${
                   isActive
-                    ? "bg-gradient-to-r from-[#006242] to-[#006644] shadow-lg text-white"
+                    ? "bg-gradient-to-r from-orange-600 to-orange-500 shadow-lg text-white"
                     : "hover:bg-slate-200 dark:hover:bg-slate-700/50"
                 }`
               }

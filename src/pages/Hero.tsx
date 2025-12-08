@@ -25,7 +25,7 @@ const roles = [
 ];
 
 const Hero: React.FC<HeroSectionProps> = ({
-  name = "Elie Joseph Mucyo",
+  name = "Elie Mucyo",
   description = `I'm a passionate software developer who specializes in building functional, scalable, and visually appealing applications using modern technologies, including the JavaScript ecosystem, React.js, and full-stack frameworks such as MERN and PERN Stacks.`,
   ctaText = "Get Started",
   ctaLink = "/projects",
@@ -74,12 +74,12 @@ const Hero: React.FC<HeroSectionProps> = ({
         {/* TEXT SECTION */}
         <div className="flex-1 text-center lg:text-left mt-10 lg:mt-0 lg:ml-[2rem]">
           <h1 className="text-4xl lg:text-6xl font-bold text-slate-900 dark:text-white leading-tight">
-            Hi, I&apos;m <br /> {name}
+            Hi, I&apos;m <span className="text-orange-600">{name}</span> 
           </h1>
 
           {/* ⭐ TYPING ANIMATION ROLE */}
           <p className="text-xl lg:text-2xl font-semibold text-slate-600 dark:text-slate-300 mt-2">
-            {roles[index].substring(0, subIndex)}
+           I&apos;m a <span className="text-orange-600">{roles[index].substring(0, subIndex)}</span> 
             <span className="border-r-2 border-[#006242] ml-1 animate-pulse"></span>
           </p>
 
@@ -89,7 +89,7 @@ const Hero: React.FC<HeroSectionProps> = ({
 
           <a
             href={ctaLink}
-            className="inline-flex items-center mt-6 px-6 py-3 bg-[#006242] hover:bg-[#007755] text-white font-semibold rounded-lg transition-all duration-300"
+            className="inline-flex items-center mt-6 px-6 py-3 bg-[#ea580c] hover:bg-orange-500 text-white font-semibold rounded-lg transition-all duration-300"
           >
             {ctaText} <ArrowRight className="ml-2" size={18} />
           </a>
@@ -97,7 +97,7 @@ const Hero: React.FC<HeroSectionProps> = ({
 
         {/* IMAGE SECTION */}
         <div className="flex-1 flex justify-center lg:justify-end">
-          <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-lg overflow-hidden shadow-2xl ring-4 ring-[#006242]/50 animate-pulse xl:mr-[4rem]">
+          <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-lg overflow-hidden shadow-2xl ring-4 ring-[#ea580c]/50 animate-pulse xl:mr-[4rem]">
             <img src={imageSrc} alt={name} className="w-full h-full object-cover" />
           </div>
         </div>

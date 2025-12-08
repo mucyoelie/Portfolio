@@ -38,7 +38,7 @@ export default function ThreeBackground() {
     starGeometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
 
     const starMaterial = new THREE.PointsMaterial({
-      color: "#006242",
+      color: "#ea580c",
       size: 0.02,
       opacity: 0.6,
       transparent: true,
