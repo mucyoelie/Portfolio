@@ -1,16 +1,18 @@
 import React, { useState } from "react";
 import {
   Home,
-  User,
-  Briefcase,
-  Code,
+  Monitor,
+  Box,
+  GitBranch,
   Mail,
+  Star,
   Sun,
   Moon,
   Orbit,
   Menu,
   X,
 } from "lucide-react";
+
 
 import { NavLink } from "react-router-dom";   // <-- ADD THIS
 import { useTheme } from "../hooks/useTheme";
@@ -31,10 +33,10 @@ const Sidebar: React.FC<SidebarProps> = ({ onToggle3D }) => {
 
   const navItems: NavItem[] = [
     { name: "Home", icon: <Home size={20} />, href: "/" },
-    { name: "About", icon: <User size={20} />, href: "/about" },
-    { name: "Projects", icon: <Briefcase size={20} />, href: "/projects" },
-    { name: "Skills", icon: <Code size={20} />, href: "/skills" },
-    { name: "Experience", icon: <Code size={20} />, href: "/experience" },
+    { name: "About", icon: <Monitor size={20} />, href: "/about" },
+    { name: "Projects", icon: <Box size={20} />, href: "/projects" },
+    { name: "Skills", icon: <GitBranch size={20} />, href: "/skills" },
+    { name: "Experience", icon: <Star size={20} />, href: "/experience" },
     { name: "Contact", icon: <Mail size={20} />, href: "/contact" },
   ];
 
@@ -60,7 +62,7 @@ const Sidebar: React.FC<SidebarProps> = ({ onToggle3D }) => {
           <div className="flex flex-col items-center">
             <div className="w-32 h-32 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 mb-4 shadow-lg ring-4 ring-slate-300 dark:ring-slate-700 overflow-hidden">
               <img
-                src="/image.jpg"
+                src="/mucyo.png"
                 alt="Profile"
                 className="w-full h-full object-cover"
               />
@@ -115,7 +117,6 @@ const Sidebar: React.FC<SidebarProps> = ({ onToggle3D }) => {
             {theme === "light" ? <Moon size={20} /> : <Sun size={20} />}
           </button>
         </div>
-
         {/* Footer */}
         <div className="p-4 text-center border-t border-slate-300 dark:border-slate-700">
           <p className="text-xs text-slate-600 dark:text-slate-400">
@@ -124,7 +125,6 @@ const Sidebar: React.FC<SidebarProps> = ({ onToggle3D }) => {
           </p>
         </div>
       </div>
-
       {/* Overlay */}
       {isOpen && (
         <div
