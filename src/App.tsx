@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Sidebar from "./components/sibeBar";
 import Hero from "./pages/Hero";
 import About from "./pages/About";
+import SkillsList from "./pages/Skills";
 import ThreeBackground from "./components/ThreeBackground";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Hero />} />
           <Route path="/about" element={<About/>}/>
+            <Route path="/skills" element={<SkillsList/>}/>
         </Routes>
       </div>
     </Router>
