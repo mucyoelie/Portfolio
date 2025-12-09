@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import {
   ArrowRight,
   Linkedin,
@@ -80,7 +80,7 @@ const Hero: React.FC<HeroSectionProps> = ({
           {/* ⭐ TYPING ANIMATION ROLE */}
           <p className="text-xl lg:text-2xl font-semibold text-slate-600 dark:text-slate-300 mt-2">
            I&apos;m a <span className="text-orange-600">{roles[index].substring(0, subIndex)}</span> 
-            <span className="border-r-2 border-[#006242] ml-1 animate-pulse"></span>
+            <span className="border-r-2 border-[#ea580c] ml-1 animate-pulse"></span>
           </p>
 
           <p className="text-slate-500 dark:text-slate-400 mt-4 max-w-lg mx-auto lg:mx-0">
