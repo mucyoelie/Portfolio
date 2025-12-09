@@ -60,8 +60,7 @@ const Hero: React.FC<HeroSectionProps> = ({
       className="
         flex flex-col 
         lg:py-20 py-10 px-6 lg:px-20 
-        bg-gradient-to-r from-slate-50 to-slate-100 
-        dark:from-slate-900 dark:to-slate-800 
+       
         min-h-screen
         lg:ml-64
         border border-slate-300 dark:border-slate-700 
