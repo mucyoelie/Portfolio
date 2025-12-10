@@ -36,7 +36,7 @@ const Sidebar: React.FC<SidebarProps> = ({ onToggle3D }) => {
     { name: "About", icon: <Monitor size={20} />, href: "/about" },
     { name: "Projects", icon: <Box size={20} />, href: "/projects" },
     { name: "Skills", icon: <GitBranch size={20} />, href: "/skills" },
-    { name: "Experience", icon: <Star size={20} />, href: "/experience" },
+    { name: "Experience", icon: <Star size={20} />, href: "/experiences" },
     { name: "Contact", icon: <Mail size={20} />, href: "/contact" },
   ];
 

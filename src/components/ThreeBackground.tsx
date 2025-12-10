@@ -79,7 +79,7 @@ export default function ThreeBackground() {
   return (
     <div
      ref={mountRef}
-  className="absolute top-0 left-0 w-full h-full pointer-events-none z-0 overflow-x-hidden"
+  className="absolute top-0 left-0 w-full h-screen pointer-events-none z-0 overflow-x-hidden"
     />
   );
 }
