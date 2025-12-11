@@ -5,6 +5,7 @@ import Hero from "./pages/Hero";
 import Experience from "./pages/Experience";
 import About from "./pages/About";
 import SkillsList from "./pages/Skills";
+import Contact from "./pages/Contact";
 import ThreeBackground from "./components/ThreeBackground";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route path="/" element={<Hero />} />
           <Route path="/about" element={<About/>}/>
           <Route path="/skills" element={<SkillsList/>}/>
+           <Route path="/contact" element={<Contact isSidebarOpen={true} />}/>
           <Route path="/experiences" element={<Experience isSidebarOpen={true} />}/>
         </Routes>
       </div>

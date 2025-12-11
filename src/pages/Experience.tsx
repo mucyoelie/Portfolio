@@ -7,10 +7,10 @@ interface ExperienceProps {
 
 const fullTimeExperience = [
   {
-    role: "Full Stack Developer",
-    company: "TechRise Solutions",
+    role: "Full Stack Developer Trainee",
+    company: "The Gym - software development trainee program",
     logo: "/mucyo.png",
-    period: "2023 - Present",
+    period: "May 2025 - Present",
     description:
       "Building full-stack systems using React, Node.js, Express, MongoDB, and designing modern UI using Tailwind CSS.",
   },
@@ -97,7 +97,7 @@ const Experience: React.FC<ExperienceProps> = () => {
         {/* Experience Cards */}
         <div className="relative">
           {/* Timeline - hidden on mobile, visible on md+ */}
-          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-orange-500 to-orange-300 h-full"></div>
+          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-[1px] bg-gradient-to-b from-orange-500 to-orange-300 h-full"></div>
 
           {experiences.map((exp, index) => {
             const isLeft = index % 2 === 0;
@@ -109,10 +109,10 @@ const Experience: React.FC<ExperienceProps> = () => {
                 } items-center md:gap-8 lg:gap-12`}
               >
                 {/* Spacer for desktop layout */}
-                <div className="hidden md:block md:w-5/12"></div>
+                <div className="hidden md:block md:w-6/12"></div>
 
                 {/* Content Card */}
-                <div className="w-full md:w-6/12 bg-gradient-to-br from-gray-800/80 to-gray-900/80 backdrop-blur-md p-4 sm:p-6 rounded-xl shadow-2xl border border-orange-500/30 hover:border-orange-500 transition-all duration-300 hover:scale-105">
+                <div className="w-full md:w-6/12  dark:bg-gradient-to-br dark:from-gray-900 dark:via-black dark:to-gray-800  bg-slate-50 backdrop-blur-md p-4 sm:p-6 rounded-sm shadow-2xl border border-orange-500/30 hover:border-orange-500 transition-all duration-300 hover:scale-105">
                   {/* Logo and Role */}
                   <div className="flex items-start gap-3 sm:gap-4 mb-3 sm:mb-4">
                     <img
@@ -142,7 +142,7 @@ const Experience: React.FC<ExperienceProps> = () => {
                 </div>
 
                 {/* Timeline Dot - only visible on md+ */}
-                <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-5 h-5 lg:w-6 lg:h-6 bg-orange-500 rounded-full border-4 border-gray-900 shadow-lg z-10"></div>
+                <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-5 h-5 lg:w-6 lg:h-6 bg-orange-500 rounded-full border-2 border-gray-300 shadow-lg z-10"></div>
               </div>
             );
           })}

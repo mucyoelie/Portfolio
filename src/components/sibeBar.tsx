@@ -52,7 +52,7 @@ const Sidebar: React.FC<SidebarProps> = ({ onToggle3D }) => {
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 left-0 h-full z-40 bg-white dark:bg-slate-900 dark:text-white
+        className={`fixed top-0 left-0 h-full z-40 dark:bg-gradient-to-br dark:from-gray-900 dark:via-black dark:to-gray-800  bg-slate-50  dark:text-white
         w-64 lg:w-64 flex flex-col shadow-2xl
         transform transition-transform duration-300
         ${isOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}`}
