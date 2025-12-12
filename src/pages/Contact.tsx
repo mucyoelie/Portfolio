@@ -22,14 +22,14 @@ const Contact: React.FC<ContactProps> = ({ isSidebarOpen }) => {
 
     try {
       const response = await emailjs.send(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_o2wi3yj",
+        "template_w5a5i4c",
         {
           from_name: formData.name,
           reply_to: formData.email,
           message: formData.message,
         },
-        "YOUR_PUBLIC_KEY"
+        "UTOVlNDtxtXHYOO2T"
       );
 
       if (response.status === 200) {
