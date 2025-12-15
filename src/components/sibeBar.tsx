@@ -52,7 +52,7 @@ const Sidebar: React.FC<SidebarProps> = ({ onToggle3D }) => {
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 left-0 h-full z-40 dark:bg-gradient-to-br dark:from-gray-900 dark:via-black dark:to-gray-800  bg-slate-50  dark:text-white
+        className={`fixed top-0 left-0 h-full z-40 dark:bg-gradient-to-br dark:from-gray-900 dark:via-black dark:to-gray-900  bg-slate-50  dark:text-white
         w-64 lg:w-64 flex flex-col shadow-2xl
         transform transition-transform duration-300
         ${isOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}`}
@@ -119,9 +119,9 @@ const Sidebar: React.FC<SidebarProps> = ({ onToggle3D }) => {
         </div>
         {/* Footer */}
         <div className="p-4 text-center border-t border-slate-300 dark:border-slate-700">
-          <p className="text-xs text-slate-600 dark:text-slate-400">
+          <p className=" text-slate-600 dark:text-slate-400 text-[0.8rem]">
             {new Date().getFullYear()} &copy; Developed by
-            <span className="text-[#006242] font-bold mx-1 text-xs">mucyo.web</span>
+            <span className="text-orange-600 font-bold mx-1 ">mucyo.web</span>
           </p>
         </div>
       </div>

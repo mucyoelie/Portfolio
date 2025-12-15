@@ -60,7 +60,7 @@ const Experience: React.FC<ExperienceProps> = () => {
     activeTab === "fulltime" ? fullTimeExperience : freelanceExperience;
 
   return (
-    <div className="min-h-screen dark:bg-gradient-to-br dark:from-gray-900 dark:via-black dark:to-gray-800  bg-slate-50 text-white px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16 xl:ml-60">
+    <div className="min-h-screen dark:bg-gradient-to-br dark:from-gray-900 dark:via-black dark:to-gray-900  bg-slate-50 text-white px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16 xl:ml-60">
       <div className="max-w-6xl mx-auto">
         {/* Title */}
         <div className="flex items-center justify-center gap-3 mb-8 sm:mb-10 lg:mb-12">
@@ -112,7 +112,7 @@ const Experience: React.FC<ExperienceProps> = () => {
                 <div className="hidden md:block md:w-6/12"></div>
 
                 {/* Content Card */}
-                <div className="w-full md:w-6/12  dark:bg-gradient-to-br dark:from-gray-900 dark:via-black dark:to-gray-800  bg-slate-50 backdrop-blur-md p-4 sm:p-6 rounded-sm shadow-2xl border border-orange-500/30 hover:border-orange-500 transition-all duration-300 hover:scale-105">
+                <div className="w-full md:w-6/12  dark:bg-gradient-to-br dark:from-gray-900 dark:via-black dark:to-gray-900  bg-slate-50 backdrop-blur-md p-4 sm:p-6 rounded-sm shadow-2xl border border-orange-500/30 hover:border-orange-500 transition-all duration-300 hover:scale-105">
                   {/* Logo and Role */}
                   <div className="flex items-start gap-3 sm:gap-4 mb-3 sm:mb-4">
                     <img

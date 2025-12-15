@@ -78,7 +78,7 @@ const skills: Skill[] = [
 
 const Skills: React.FC = () => {
   return (
-    <section className="min-h-screen bg-gray-50 dark:bg-slate-900">
+    <section className="min-h-screen dark:bg-gradient-to-br dark:from-gray-900 dark:via-black dark:to-gray-900  bg-slate-50">
 
       {/* Main content area */}
       <div className="lg:ml-40 lg:mr-40 w-full">
@@ -87,7 +87,7 @@ const Skills: React.FC = () => {
             My Skills
           </h2>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-6 lg:mr-12">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-6 lg:mr-12 ">
             {skills.map((skill) => (
               <div
                 key={skill.name}

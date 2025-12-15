@@ -25,7 +25,7 @@ const About: React.FC<AboutUsProps> = ({
   ],
 }) => {
   return (
-    <section className="flex flex-col lg:flex-row items-start justify-between py-16 px-6 lg:px-20 bg-slate-50 dark:bg-slate-900 min-h-screen lg:ml-64 border border-slate-300 dark:border-slate-700">
+    <section className="flex flex-col lg:flex-row items-start justify-between py-16 px-6 lg:px-20 dark:bg-gradient-to-br dark:from-gray-900 dark:via-black dark:to-gray-900  bg-slate-50 min-h-screen lg:ml-64 border border-slate-300 dark:border-slate-700">
 
       {/* SERVICES SECTION */}
       <div className="flex-1 flex flex-col gap-6 mb-10 lg:mb-0">
@@ -34,7 +34,7 @@ const About: React.FC<AboutUsProps> = ({
           {services.map((service) => (
             <div
               key={service.name}
-              className="p-6 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-sm shadow-md hover:shadow-lg transition-all pt-10"
+              className="p-6 bg-white dark:bg-gradient-to-br dark:from-gray-900 dark:via-black dark:to-gray-900 border border-slate-200 dark:border-slate-700 rounded-sm shadow-md hover:shadow-lg transition-all pt-10"
             >
               <h4 className="text-lg font-semibold text-slate-800 dark:text-white">
                 {service.name}
@@ -64,15 +64,15 @@ const About: React.FC<AboutUsProps> = ({
 
         {/* ---- STATS SECTION ---- */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-8">
-          <div className="flex flex-col items-center bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 p-6 rounded-sm shadow-md hover:shadow-lg transition-all">
+          <div className="flex flex-col items-center dark:bg-gradient-to-br dark:from-gray-900 dark:via-black dark:to-gray-900  bg-slate-50 border border-slate-200 dark:border-slate-700 p-6 rounded-sm shadow-md hover:shadow-lg transition-all">
             <p className="text-4xl font-bold text-orange-600">6+</p>
             <p className="text-slate-600 dark:text-slate-300 font-medium mt-1">Projects Done</p>
           </div>
-          <div className="flex flex-col items-center bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 p-6 rounded-sm shadow-md hover:shadow-lg transition-all">
+          <div className="flex flex-col items-center dark:bg-gradient-to-br dark:from-gray-900 dark:via-black dark:to-gray-900  bg-slate-50 border border-slate-200 dark:border-slate-700 p-6 rounded-sm shadow-md hover:shadow-lg transition-all">
             <p className="text-4xl font-bold text-orange-600">3+</p>
             <p className="text-slate-600 dark:text-slate-300 font-medium mt-1">Years Experience</p>
           </div>
-          <div className="flex flex-col items-center bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 p-6 rounded-sm shadow-md hover:shadow-lg transition-all">
+          <div className="flex flex-col items-center dark:bg-gradient-to-br dark:from-gray-900 dark:via-black dark:to-gray-900  bg-slate-50 border border-slate-200 dark:border-slate-700 p-6 rounded-sm shadow-md hover:shadow-lg transition-all">
             <p className="text-4xl font-bold text-orange-600">4+</p>
             <p className="text-slate-600 dark:text-slate-300 font-medium mt-1">Happy Clients</p>
           </div>
