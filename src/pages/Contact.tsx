@@ -207,5 +207,4 @@ const Contact: React.FC<ContactProps> = ({ isSidebarOpen }) => {
     </div>
   );
 };
-
 export default Contact;

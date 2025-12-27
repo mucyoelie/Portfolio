@@ -12,27 +12,19 @@ const fullTimeExperience = [
     logo: "/mucyo.png",
     period: "May 2025 - Present",
     description:
-      "Building full-stack systems using React, Node.js, Express, MongoDB, and designing modern UI using Tailwind CSS.",
-  },
-  {
-    role: "Frontend Developer",
-    company: "GoldPack Live",
-    logo: "/mucyo.png",
-    period: "2022 - 2023",
-    description:
-      "Developed responsive UI, product dashboards, optimized performance, and built interactive components.",
-  },
-  {
-    role: "Frontend Developer",
-    company: "GoldPack Live",
-    logo: "/mucyo.png",
-    period: "2022 - 2023",
-    description:
-      "Developed responsive UI, product dashboards, optimized performance, and built interactive components.",
+      "During the training period, I learned and practiced full-stack development using ReactJS, Node.js, and NestJS. I designed modern user interfaces with Tailwind CSS and improved my skills in JavaScript, TypeScript, Redux, MongoDB, and PostgreSQL.",
   },
 ];
 
 const freelanceExperience = [
+    {
+    role: "Frontend Developer",
+    company: "GoldPack Live",
+    logo: "/mucyo.png",
+    period: "2022 - 2023",
+    description:
+      "Developed responsive UI, product dashboards, optimized performance, and built interactive components.",
+  },
   {
     role: "Junior Software Engineer",
     company: "Freelance",

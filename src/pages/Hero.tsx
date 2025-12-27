@@ -125,7 +125,7 @@ const Hero: React.FC<HeroSectionProps> = ({
           <Mail className="w-6 h-6 text-red-600" />
         </a>
 
-        <a href="https://x.com/ElieM45470" target="_blank"
+        <a href="https://x.com/mucyoelie84" target="_blank"
           className="p-3 bg-slate-200 dark:bg-slate-700 rounded-full hover:bg-slate-300 dark:hover:bg-slate-600 transition">
           <SiX className="w-6 h-6 text-black dark:text-white" />
         </a>
