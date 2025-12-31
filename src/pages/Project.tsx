@@ -38,19 +38,29 @@ const techIcons: Record<string, JSX.Element> = {
 // === PROJECT DATA ===
 const webProjects = [
   {
-    title: "GoldPack Live",
+    title: "2025 Portfolio Website",
     type: "Frontend Development",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+    image: "Project1.png",
     tech: ["react", "tailwind", "javascript"],
-    period: "2023 - 2024",
+    period: "2024 - 2025",
     description:
       "A complete IT solutions platform built with React & Tailwind CSS.",
     link: "https://goldpacklive.com",
   },
   {
-    title: "QuizMaster",
-    type: "Full Stack Development",
-    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=600&fit=crop",
+    title: "2026 Portfolio Website",
+    type: "Frontend Development",
+    image: "Project6.png",
+    tech: ["react", "node", "mongo"],
+    period: "2026",
+    description:
+      "A quiz platform with login, categories, leaderboards and real-time quizzes.",
+    link: "https://quizmaster.com",
+  },
+   {
+    title: "KBLCoffee",
+    type: "Frontend Development",
+    image: "Project2.png",
     tech: ["react", "node", "mongo"],
     period: "2024",
     description:
@@ -62,13 +72,33 @@ const webProjects = [
 const mobileProjects = [
   {
     title: "WalletPro",
-    type: "Mobile App",
+    type: "Full-Stack Devepment",
     image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=600&fit=crop",
     tech: ["react", "typescript"],
     period: "2024 - Present",
     description:
       "A wallet app for tracking transactions, budgets, categories and reports.",
     link: "https://walletpro.com",
+  },
+   {
+    title: "GoldPack Live",
+    type: "Full-Stack Development",
+    image: "project4.png",
+    tech: ["react", "tailwind", "javascript"],
+    period: "2023 - 2024",
+    description:
+      "A complete IT solutions platform built with React & Tailwind CSS.",
+    link: "https://goldpacklive.com",
+  },
+   {
+    title: "Auto Experts Rwanda",
+    type: "Full-Stack Development",
+    image: "Project7.png",
+    tech: ["react", "tailwind", "javascript"],
+    period: "2023 - 2024",
+    description:
+      "A complete IT solutions platform built with React & Tailwind CSS.",
+    link: "https://goldpacklive.com",
   },
 ];
 
@@ -167,7 +197,7 @@ const Projects: React.FC<ProjectsProps> = () => {
                 <h3 className="text-base sm:text-lg lg:text-xl font-bold text-white mb-1">
                   {project.title}
                 </h3>
-                <p className="text-xs sm:text-sm text-orange-300 mb-0.5">{project.type}</p>
+                <p className="text-xs sm:text-sm text-orange-500 mb-0.5">{project.type}</p>
                 <p className="text-xs text-gray-300 mb-2 sm:mb-3">{project.period}</p>
                 
                 {/* Description */}
@@ -209,7 +239,7 @@ const Projects: React.FC<ProjectsProps> = () => {
                 <h3 className="text-lg sm:text-xl font-bold text-white break-words">
                   {project.title}
                 </h3>
-                <p className="text-xs sm:text-sm text-orange-300">{project.type}</p>
+                <p className="text-xs sm:text-sm text-orange-500">{project.type}</p>
               </div>
             </div>
           ))}
