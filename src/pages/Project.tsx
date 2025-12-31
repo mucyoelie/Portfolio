@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import type { JSX } from "react";
 import { FolderOpen } from "lucide-react";
-
+import {
+ 
+  SiReact,
+  
+} from "react-icons/si";
 const techIcons: Record<string, JSX.Element> = {
   react: (
-    <svg className="w-6 h-6 text-sky-400" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M12 10.11c1.03 0 1.87.84 1.87 1.89 0 1-.84 1.85-1.87 1.85S10.13 13 10.13 12c0-1.05.84-1.89 1.87-1.89M7.37 20c.63.38 2.01-.2 3.6-1.7-.52-.59-1.03-1.23-1.51-1.9a22.7 22.7 0 0 1-2.4-.36c-.51 2.14-.32 3.61.31 3.96m.71-5.74l-.29-.51c-.11.29-.22.58-.29.86.27.06.57.11.88.16l-.3-.51m6.54-.76l.81-1.5-.81-1.5c-.3-.53-.62-1-.91-1.47C13.17 9 12.6 9 12 9c-.6 0-1.17 0-1.71.03-.29.47-.61.94-.91 1.47L8.57 12l.81 1.5c.3.53.62 1 .91 1.47.54.03 1.11.03 1.71.03.6 0 1.17 0 1.71-.03.29-.47.61-.94.91-1.47M12 6.78c-.19.22-.39.45-.59.72h1.18c-.2-.27-.4-.5-.59-.72m0 10.44c.19-.22.39-.45.59-.72h-1.18c.2.27.4.5.59.72M16.62 4c-.62-.38-2 .2-3.59 1.7.52.59 1.03 1.23 1.51 1.9.82.08 1.63.2 2.4.36.51-2.14.32-3.61-.32-3.96m-.7 5.74l.29.51c.11-.29.22-.58.29-.86-.27-.06-.57-.11-.88-.16l.3.51m1.45-7.05c1.47.84 1.63 3.05 1.01 5.63 2.54.75 4.37 1.99 4.37 3.68s-1.83 2.93-4.37 3.68c.62 2.58.46 4.79-1.01 5.63-1.46.84-3.45-.12-5.37-1.95-1.92 1.83-3.91 2.79-5.38 1.95-1.46-.84-1.62-3.05-1-5.63-2.54-.75-4.37-1.99-4.37-3.68s1.83-2.93 4.37-3.68c-.62-2.58-.46-4.79 1-5.63 1.47-.84 3.46.12 5.38 1.95 1.92-1.83 3.91-2.79 5.37-1.95M17.08 12c.34.75.64 1.5.89 2.26 2.1-.63 3.28-1.53 3.28-2.26 0-.73-1.18-1.63-3.28-2.26-.25.76-.55 1.51-.89 2.26M6.92 12c-.34-.75-.64-1.5-.89-2.26-2.1.63-3.28 1.53-3.28 2.26 0 .73 1.18 1.63 3.28 2.26.25-.76.55-1.51.89-2.26m9.11 0c-.45.89-.96 1.76-1.5 2.58a24.3 24.3 0 0 0 1.57-.26l-.07-.32m-1.44-7.11c.48-.35.94-.64 1.32-.85-.77-.16-1.59-.27-2.45-.33.37.56.73 1.15 1.13 1.18M12 3.04c-.52-.59-1.03-1.12-1.51-1.56-.29.07-.56.15-.82.24.53.63 1.12 1.34 1.76 2.12.19-.27.38-.53.57-.8M5.7 3.32c.38.21.84.5 1.32.85.4-.03.76-.62 1.13-1.18-.86.06-1.68.17-2.45.33m-2.14 2.36c-.85.37-1.58.79-2.14 1.23.12.73.42 1.5.81 2.26C3.07 9.5 4.03 9.2 5.03 9c-.29-.56-.56-1.15-.8-1.77-.27-.03-.55-.06-.82-.1a3.15 3.15 0 0 1 .15-.45m11.43 13c-.48.35-.94.64-1.32.85.77.16 1.59.27 2.45.33-.37-.56-.73-1.15-1.13-1.18M12 20.96c.52.59 1.03 1.12 1.51 1.56.29-.07.56-.15.82-.24-.53-.63-1.12-1.34-1.76-2.12-.19.27-.38.53-.57.8m6.3-.64c-.38-.21-.84-.5-1.32-.85-.4.03-.76.62-1.13 1.18.86-.06 1.68-.17 2.45-.33m2.14-2.36c.85-.37 1.58-.79 2.14-1.23-.12-.73-.42-1.5-.81-2.26-.84-.33-1.8-.63-2.8-.83.29.56.56 1.15.8 1.77.27.03.55.06.82.1-.05.15-.1.3-.15.45z"/>
-    </svg>
+   <SiReact className="text-blue-400 w-6 h-6 " />
   ),
   tailwind: (
     <svg className="w-6 h-6 text-teal-400" viewBox="0 0 24 24" fill="currentColor">
@@ -45,7 +47,7 @@ const webProjects = [
     period: "2024 - 2025",
     description:
       "A complete IT solutions platform built with React & Tailwind CSS.",
-    link: "https://goldpacklive.com",
+    link: "https://mucyoelie.netlify.app/",
   },
   {
     title: "2026 Portfolio Website",
@@ -55,7 +57,7 @@ const webProjects = [
     period: "2026",
     description:
       "A quiz platform with login, categories, leaderboards and real-time quizzes.",
-    link: "https://quizmaster.com",
+    link: "https://mucyodev.netlify.app/",
   },
    {
     title: "KBLCoffee",
@@ -193,12 +195,12 @@ const Projects: React.FC<ProjectsProps> = () => {
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/85 transition-all duration-300"></div>
 
               {/* Hover Content - Tech Stack & Specifications */}
-              <div className="absolute inset-0 flex flex-col justify-center items-center px-4 sm:px-6 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 overflow-hidden">
+              <div className="absolute inset-0 flex flex-col justify-center items-start px-4 sm:px-6 text-start opacity-0 group-hover:opacity-100 transition-opacity duration-300 overflow-hidden">
                 <h3 className="text-base sm:text-lg lg:text-xl font-bold text-white mb-1">
                   {project.title}
                 </h3>
                 <p className="text-xs sm:text-sm text-orange-500 mb-0.5">{project.type}</p>
-                <p className="text-xs text-gray-300 mb-2 sm:mb-3">{project.period}</p>
+                <p className="text-xs text-gray-300 mb-2 sm:mb-3 ">{project.period}</p>
                 
                 {/* Description */}
                 <p className="text-xs sm:text-sm text-gray-300 mb-3 sm:mb-4 max-w-sm leading-relaxed px-2">
