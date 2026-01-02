@@ -8,9 +8,9 @@ import {
   Star,
   Sun,
   Moon,
-  Orbit,
   Menu,
   X,
+  Sparkles
 } from "lucide-react";
 
 
@@ -104,15 +104,15 @@ const Sidebar: React.FC<SidebarProps> = ({ onToggle3D }) => {
           {onToggle3D && (
             <button
               onClick={onToggle3D}
-              className="w-10 h-10 flex items-center justify-center rounded-lg bg-slate-200 dark:bg-slate-700/50 hover:bg-purple-400 dark:hover:bg-purple-600 transition-all duration-200"
+              className="w-10 h-10 flex items-center justify-center rounded-lg bg-transparent hover:bg-gray-600  transition-all duration-200"
             >
-              <Orbit size={22} />
+              <Sparkles size={22} />
             </button>
           )}
 
           <button
             onClick={toggleTheme}
-            className="w-10 h-10 flex items-center justify-center rounded-lg bg-slate-200 dark:bg-slate-700/50 hover:bg-yellow-400 dark:hover:bg-blue-600 transition-all duration-200"
+            className="w-10 h-10 flex items-center justify-center rounded-lg text-yellow-500 bg-transparent hover:bg-yellow-400 dark:hover:bg-yellow-300 transition-all duration-200"
           >
             {theme === "light" ? <Moon size={20} /> : <Sun size={20} />}
           </button>
