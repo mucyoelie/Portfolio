@@ -20,23 +20,23 @@ const freelanceExperience = [
     {
     role: "Frontend Developer",
     company: "GoldPack Live",
-    logo: "/mucyo.png",
-    period: "2022 - 2023",
+    logo: "/goldpack.png",
+    period: "October 2024 - April 2025",
     description:
       "Developed responsive UI, product dashboards, optimized performance, and built interactive components.",
   },
   {
-    role: "Junior Software Engineer",
-    company: "Freelance",
-    logo: "/mucyo.png",
-    period: "2021 - 2022",
+    role: "Full-Stack Developer",
+    company: "AutoExperts Rwanda",
+    logo: "/autoexperts.jpg",
+    period: "May 2025 - August 2025",
     description:
       "Built landing pages, full web apps, REST API integrations and delivered solutions for clients.",
   },
   {
-    role: "Web Designer",
-    company: "Freelance Project",
-    logo: "/mucyo.png",
+    role: "Frontend Developer",
+    company: "Prozlab",
+    logo: "/prozlab.png",
     period: "2020 - 2021",
     description:
       "Designed UI/UX for websites and landing pages for clients across different industries.",
@@ -110,7 +110,7 @@ const Experience: React.FC<ExperienceProps> = () => {
                     <img
                       src={exp.logo}
                       alt={exp.company}
-                      className="w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-orange-500 object-cover flex-shrink-0"
+                      className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg  object-cover flex-shrink-0"
                     />
                     <div className="flex-1 min-w-0">
                       <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-orange-400 break-words">
