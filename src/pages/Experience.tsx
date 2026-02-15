@@ -36,7 +36,7 @@ const freelanceExperience = [
   {
     role: "Frontend Developer",
     company: "Prozlab",
-    logo: "/prozlab.png",
+    logo: "/prozlab5.png",
     period: "2020 - 2021",
     description:
       "Designed UI/UX for websites and landing pages for clients across different industries.",
