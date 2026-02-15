@@ -62,7 +62,7 @@ const Sidebar: React.FC<SidebarProps> = ({ onToggle3D }) => {
           <div className="flex flex-col items-center">
             <div className="w-32 h-32 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 mb-4 shadow-lg ring-4 ring-slate-300 dark:ring-slate-700 overflow-hidden">
               <img
-                src="/mucyo.png"
+                 src={theme === "dark" ? "/image3.png" : "/image1.png"}
                 alt="Profile"
                 className="w-full h-full object-cover"
               />
