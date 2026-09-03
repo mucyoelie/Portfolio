@@ -132,7 +132,7 @@ const Projects: React.FC<ProjectsProps> = () => {
       : uiProjects;
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-gradient-to-br dark:from-gray-900 dark:via-black dark:to-gray-900 text-white px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16 xl:ml-60">
+    <div className="min-h-screen bg-slate-50 dark:bg-gradient-to-br dark:from-gray-900 dark:via-black dark:to-gray-900 text-white px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
       <div className="max-w-6xl mx-auto">
         {/* Title */}
         <div className="flex items-center justify-center gap-3 mb-8 sm:mb-10 lg:mb-12">

@@ -59,25 +59,24 @@ const Hero: React.FC<HeroSectionProps> = ({
     <section
       className="
         flex flex-col 
-        lg:py-20 py-10 px-6 lg:px-20 
+        lg:py-20 py-20 sm:py-12 px-4 sm:px-6 lg:px-20 
         dark:bg-gradient-to-br dark:from-gray-900 dark:via-black dark:to-gray-900  bg-slate-50
         min-h-screen
-        lg:ml-64
         border border-slate-300 dark:border-slate-700 
         z-20
       "
     >
       {/* TOP: TEXT + IMAGE */}
-      <div className="flex flex-col-reverse lg:flex-row items-center justify-between w-full">
+      <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-16 w-full max-w-7xl mx-auto">
         
         {/* TEXT SECTION */}
-        <div className="flex-1 text-center lg:text-left mt-10 lg:mt-0 lg:ml-[2rem]">
-          <h1 className="text-4xl lg:text-6xl font-bold text-slate-900 dark:text-white leading-tight">
+        <div className="flex-1 min-w-0 text-center lg:text-left mt-10 lg:mt-0">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 dark:text-white leading-tight">
             Hi, I&apos;m <span className="text-orange-600">{name}</span> 
           </h1>
 
           {/* ⭐ TYPING ANIMATION ROLE */}
-          <p className="text-xl lg:text-2xl font-semibold text-slate-600 dark:text-slate-300 mt-2">
+          <p className="text-lg sm:text-xl lg:text-2xl font-semibold text-slate-600 dark:text-slate-300 mt-2">
            I&apos;m a <span className="text-orange-600">{roles[index].substring(0, subIndex)}</span> 
             <span className="border-r-2 border-[#ea580c] ml-1 animate-pulse"></span>
           </p>
@@ -95,15 +94,15 @@ const Hero: React.FC<HeroSectionProps> = ({
         </div>
 
         {/* IMAGE SECTION */}
-        <div className="flex-1 flex justify-center lg:justify-end">
-          <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-lg overflow-hidden shadow-2xl ring-4 ring-[#ea580c]/50 animate-pulse xl:mr-[4rem]">
+        <div className="flex-1 flex justify-center lg:justify-start justify-end w-full">
+          <div className="w-56 h-56 sm:w-64 sm:h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden shadow-2xl ring-4 ring-[#ea580c]/50 animate-pulse">
             <img src={imageSrc} alt={name} className="w-full h-full object-cover" />
           </div>
         </div>
       </div>
 
-      {/* SOCIAL ICONS FULL-WIDTH BAR */}
-      <div className="w-full flex items-center justify-center gap-20 mt-40 flex-wrap">
+      {/* SOCIAL ICONS */}
+      <div className="w-full max-w-7xl mx-auto flex items-center justify-center lg:justify-between gap-4 sm:gap-8 mt-20 lg:mt-40 flex-wrap">
         
         <a href="https://www.linkedin.com/in/mucyo-elie-9948b5390/" target="_blank"
           className="p-3 bg-slate-200 dark:bg-slate-700 rounded-full hover:bg-slate-300 dark:hover:bg-slate-600 transition">

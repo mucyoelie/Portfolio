@@ -18,9 +18,18 @@ export default function ThreeBackground() {
     );
     camera.position.z = 2;
 
-    const renderer = new THREE.WebGLRenderer({ alpha: true });
+    const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     renderer.setSize(window.innerWidth, window.innerHeight);
     mount.appendChild(renderer.domElement);
+
+    const handleResize = () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    };
+
+    window.addEventListener("resize", handleResize);
 
     // Stars
     const starCount = 1500;
@@ -47,6 +56,8 @@ export default function ThreeBackground() {
     const stars = new THREE.Points(starGeometry, starMaterial);
     scene.add(stars);
 
+    let animationFrameId: number;
+
     const animate = () => {
       const pos = starGeometry.attributes.position.array as Float32Array;
 
@@ -66,20 +77,25 @@ export default function ThreeBackground() {
       stars.rotation.y += 0.001;
 
       renderer.render(scene, camera);
-      requestAnimationFrame(animate);
+      animationFrameId = requestAnimationFrame(animate);
     };
 
     animate();
 
     return () => {
+      cancelAnimationFrame(animationFrameId);
+      window.removeEventListener("resize", handleResize);
+      starGeometry.dispose();
+      starMaterial.dispose();
+      renderer.dispose();
       mount.removeChild(renderer.domElement);
     };
   }, []);
 
   return (
     <div
-     ref={mountRef}
-  className="absolute top-0 left-0 w-full h-screen pointer-events-none z-0 overflow-x-hidden"
+      ref={mountRef}
+      className="fixed inset-0 w-screen h-screen pointer-events-none z-0 overflow-hidden"
     />
   );
 }

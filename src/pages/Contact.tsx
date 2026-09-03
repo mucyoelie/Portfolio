@@ -57,9 +57,7 @@ const Contact: React.FC<ContactProps> = ({ isSidebarOpen }) => {
   return (
     <div className="w-full min-h-screen dark:bg-gradient-to-br dark:from-gray-900 dark:via-black dark:to-gray-900  bg-slate-50 flex justify-center items-center">
       <div
-        className={`transition-all duration-300 p-4 md:p-6 w-full flex justify-center items-center ${
-          isSidebarOpen ? 'md:ml-64' : 'md:ml-20'
-        }`}
+        className="transition-all duration-300 p-3 sm:p-4 md:p-6 w-full flex justify-center items-center"
       >
         <div className="w-full max-w-6xl  shadow-2xl rounded-sm overflow-hidden dark:bg-gradient-to-br dark:from-gray-900 dark:via-black dark:to-gray-900  bg-slate-50">
           <div className="grid md:grid-cols-5 gap-0">
@@ -101,7 +99,7 @@ const Contact: React.FC<ContactProps> = ({ isSidebarOpen }) => {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1 text-gray-800  dark:text-white">Email</h3>
-                      <p className="text-gray-700 text-sm  dark:text-white">mucyoelie84@gmail.com</p>
+                      <p className="text-gray-700 text-sm break-all dark:text-white">mucyoelie84@gmail.com</p>
                     </div>
                   </div>
 

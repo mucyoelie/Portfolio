@@ -81,19 +81,19 @@ const Skills: React.FC = () => {
     <section className="min-h-screen dark:bg-gradient-to-br dark:from-gray-900 dark:via-black dark:to-gray-900  bg-slate-50">
 
       {/* Main content area */}
-      <div className="lg:ml-40 lg:mr-40 w-full">
+      <div className="w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
           <h2 className="text-3xl lg:text-4xl font-bold mb-8 lg:mb-12 text-slate-800 dark:text-white text-center">
             My Skills
           </h2>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-6 lg:mr-12 ">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4 lg:gap-6">
             {skills.map((skill) => (
               <div
                 key={skill.name}
                 className="
                   flex flex-col items-center justify-center
-                  gap-3 p-6
+                  gap-3 p-3 sm:p-6
                   bg-transparent 
                   rounded-xl shadow-sm 
                   hover:shadow-xl hover:scale-105

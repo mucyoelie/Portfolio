@@ -25,7 +25,7 @@ const About: React.FC<AboutUsProps> = ({
   ],
 }) => {
   return (
-    <section className="flex flex-col lg:flex-row items-start justify-between py-16 px-6 lg:px-20 dark:bg-gradient-to-br dark:from-gray-900 dark:via-black dark:to-gray-900  bg-slate-50 min-h-screen lg:ml-64 border border-slate-300 dark:border-slate-700">
+    <section className="flex flex-col lg:flex-row items-start justify-between gap-10 py-12 sm:py-16 px-4 sm:px-6 lg:px-20 dark:bg-gradient-to-br dark:from-gray-900 dark:via-black dark:to-gray-900 bg-slate-50 min-h-screen border border-slate-300 dark:border-slate-700">
 
       {/* SERVICES SECTION */}
       <div className="flex-1 flex flex-col gap-6 mb-10 lg:mb-0">

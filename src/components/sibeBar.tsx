@@ -25,9 +25,10 @@ interface NavItem {
 
 interface SidebarProps {
   onToggle3D?: () => void;
+  is3DEnabled?: boolean;
 }
 
-const Sidebar: React.FC<SidebarProps> = ({ onToggle3D }) => {
+const Sidebar: React.FC<SidebarProps> = ({ onToggle3D, is3DEnabled = false }) => {
   const [isOpen, setIsOpen] = useState(false);
   const { theme, toggleTheme } = useTheme();
 
@@ -52,8 +53,8 @@ const Sidebar: React.FC<SidebarProps> = ({ onToggle3D }) => {
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 left-0 h-full z-40 dark:bg-gradient-to-br dark:from-gray-900 dark:via-black dark:to-gray-900  bg-slate-50  dark:text-white
-        w-64 lg:w-64 flex flex-col shadow-2xl
+        className={`fixed top-0 left-0 h-full z-40 dark:bg-gradient-to-br dark:from-gray-900 dark:via-black dark:to-gray-900 bg-slate-50 text-black dark:text-white
+        w-[min(14rem,calc(100vw-1rem))] lg:w-56 flex flex-col shadow-2xl
         transform transition-transform duration-300
         ${isOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}`}
       >
@@ -64,7 +65,7 @@ const Sidebar: React.FC<SidebarProps> = ({ onToggle3D }) => {
               <img
                  src={theme === "dark" ? "/image3.png" : "/image1.png"}
                 alt="Profile"
-                className="w-full h-full object-cover"
+                className="w-full h-full rounded-full object-cover"
               />
             </div>
 
@@ -104,7 +105,14 @@ const Sidebar: React.FC<SidebarProps> = ({ onToggle3D }) => {
           {onToggle3D && (
             <button
               onClick={onToggle3D}
-              className="w-10 h-10 flex items-center justify-center rounded-lg bg-transparent hover:bg-gray-600  transition-all duration-200"
+              type="button"
+              aria-label={`${is3DEnabled ? "Disable" : "Enable"} 3D background`}
+              title={`${is3DEnabled ? "Disable" : "Enable"} 3D background`}
+              className={`w-10 h-10 flex items-center justify-center rounded-lg transition-all duration-200 ${
+                is3DEnabled
+                  ? "bg-orange-600 text-white shadow-lg"
+                  : "bg-transparent hover:bg-slate-200 dark:hover:bg-gray-600"
+              }`}
             >
               <Sparkles size={22} />
             </button>

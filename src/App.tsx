@@ -18,20 +18,21 @@ function App() {
       <div className="w-full h-full overflow-x-hidden font-raleway">
         
         {/* Sidebar with Orbit toggle */}
-        <Sidebar onToggle3D={() => setShow3D(!show3D)} />
+        <Sidebar is3DEnabled={show3D} onToggle3D={() => setShow3D(!show3D)} />
 
         {/* 3D stars background */}
         {show3D && <ThreeBackground />}
 
-        {/* ROUTES */}
-        <Routes>
-          <Route path="/" element={<Hero />} />
-          <Route path="/about" element={<About/>}/>
-          <Route path="/skills" element={<SkillsList/>}/>
-          <Route path="/projects" element={<Projects />}/>
-           <Route path="/contact" element={<Contact isSidebarOpen={true} />}/>
-          <Route path="/experiences" element={<Experience isSidebarOpen={true} />}/>
-        </Routes>
+        <main className="min-w-0 lg:ml-56">
+          <Routes>
+            <Route path="/" element={<Hero />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/skills" element={<SkillsList />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact isSidebarOpen={true} />} />
+            <Route path="/experiences" element={<Experience isSidebarOpen={true} />} />
+          </Routes>
+        </main>
       </div>
     </Router>
   );
